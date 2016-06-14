@@ -25,7 +25,7 @@ class NewVisitorTest(unittest.TestCase):
         self.assertIn('To-Do', header_text)
 # The user is invited to enter a To-Do list entry right away
         inputbox = self.browser.find_element_by_id('id_new_item')
-        self.assertEqual(inputbox.get_attribute('placeholder'), 'Enter To-Do Item')
+        self.assertEqual(inputbox.get_attribute('placeholder'), 'Enter a To-Do Item')
 
 # The user Types "Buy Milk and Bread"
         inputbox.send_keys(Keys.ENTER)
